@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Store - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jilan Perfume</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                <div id="cart-dropdown">
+                    <h2 style="color: #800020;">Your Cart</h2>
+                    <ul id="cart-items"></ul>
+                    <p id="total"></p>
+                    <button id="clear-cart">Clear Cart</button>
+                    <button id="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Jilan Perfume</h2>
+            <p><i>"Discover the finest fragrances for every occasion and embrace the essence of luxury—find your perfect scent today."</i></p>
+            <div id="featured">
+                <h2>Featured Perfumes</h2>
+                <p><i>"Indulge your senses with our featured perfumes, each bottle is a masterpiece, crafted to envelop you in timeless elegance and unforgettable allure."</i></p>
+                <div class="perfume">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhMtwXTNqAtEcYbVuOj0-D7_afddbEE6QAR3RkC3aJxwZsWFYtL58GmY99NfAeC9lhsH4&usqp=CAU" alt="Perfume 1">
+                    <h3 style="color: #800020;">optio molestias id quia eum</h3>
+                    <p>quo et expedita modi cum officia.</p>
+                    <p>Price:59.5</p>
+                    <button class="add-to-cart" 
+                        data-name="optio molestias id quia eum" 
+                        data-price="59.50"
+                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhMtwXTNqAtEcYbVuOj0-D7_afddbEE6QAR3RkC3aJxwZsWFYtL58GmY99NfAeC9lhsH4&usqp=CAU">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="perfume">
+                    <img src="https://www.jiomart.com/images/product/original/rvu0oerghv/bella-vita-luxury-senorita-edp-perfume-for-women-100-ml-product-images-orvu0oerghv-p596366951-0-202304280435.jpg?im=Resize=(220,600)" alt="Perfume 2">
+                    <h3 style="color: #800020;">nesciunt quas odio</h3>
+                    <p>repudiandae veniam quaerat sunt.</p>
+                    <p>Price:29.99</p>
+                    <button class="add-to-cart" 
+                data-name="nesciunt quas odio" 
+                data-price="29.99"
+                data-image="https://www.jiomart.com/images/product/original/rvu0oerghv/bella-vita-luxury-senorita-edp-perfume-for-women-100-ml-product-images-orvu0oerghv-p596366951-0-202304280435.jpg?im=Resize=(220,600)">
+                Add to Cart
+            </button>
+
+                </div>
+                <div class="perfume">
+                    <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1715876753-1701298159-versace-bright-crystal-6567be56412ba.jpg?crop=1xw:1xh;center,top&resize=220:*" alt="Perfume 3">
+                    <h3 style="color: #800020;">consequatur placeat omnis</h3>
+                    <p>asperiores sunt ab assume.</p>
+                    <p>Price:250.99</p>
+                    <button class="add-to-cart" 
+                data-name="consequatur placeat omnis" 
+                data-price="250.99"
+                data-image="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1715876753-1701298159-versace-bright-crystal-6567be56412ba.jpg?crop=1xw:1xh;center,top&resize=220:*">
+                Add to Cart
+            </button>
+                </div>
+                
+            </div>    
+        </section>
+    </main>
+
+    <footer style="background-color: #800020;">
+        <p>
+            Contact us: jilan@perfumes.com | Follow us :
+            <a href="https://www.instagram.com" target="_blank" style="color: white; text-decoration: none; font-size: 20px;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" style="color: white; text-decoration: none; margin-left: 10px;font-size: 20px;">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

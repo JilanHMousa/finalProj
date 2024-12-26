@@ -1,0 +1,649 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #fdf6f0;
+    color: #333;
+    padding-bottom: 100px;
+}
+
+header {
+    background-color:  #800020;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    background-color:  #800020;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    background-color:  pink;
+    display: inline;
+    margin: 0 15px;
+   
+}
+
+nav ul li a {
+    background-color:  #800020;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color:  #800020;
+}
+
+footer {
+    background-color:  #800020;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+main {
+    padding: 20px;
+}
+
+#featured .perfume {
+    display: inline-block;
+    margin: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#featured .perfume:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    
+}
+
+#featured .perfume img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#featured h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #800020;    
+}
+#product-list .product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+#product-list .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    
+}
+
+#product-list .product img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#search-bar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #800020;
+}
+
+form {
+    max-width: 500px; 
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #800020;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #800020;
+
+}
+
+form button {
+margin-bottom: 20px; 
+background: #800020;
+color: #fff;
+border: none;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+form button:hover {
+    background: white;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #800020;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #800020;
+}
+
+#cart {
+    background-color:  #800020;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+#cart h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color:  #800020;
+
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+#cart ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cart ul li span {
+    font-size: 1rem;
+    color: #555;
+}
+
+#cart button {
+    background: #b5838d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart button:hover {
+    background: #d4a373;
+}
+
+#total {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cart-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color:  #800020;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size:15px;
+}
+
+#cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#cart-dropdown h2 {
+    color: #b5838d;
+    margin-top: 0;
+}
+
+#cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#cart-dropdown li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    background-color:  #800020;
+}
+
+#cart-dropdown li:last-child {
+    border-bottom: none;
+}
+
+header {
+    position: relative;
+}
+#cart-items li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#cart-items li img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#cart-items li button.remove-item {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #b5838d;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cart-items li button.remove-item:hover {
+    color: #d4a373;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.cart-item-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {    
+    flex-grow: 1;
+}
+.cart-summary {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.cart-summary > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.cart-summary .total {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    color:  #800020;
+
+}
+
+#checkout-btn {
+    display: none;
+    width: 100%;
+    background-color: #800020;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background: #d4a373;
+}
+
+.item-total {
+    font-size: 0.9em;
+    color: white;
+    margin-top: 5px;
+}
+
+.cart-item-details h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.cart-item-details .price {
+    margin: 0;
+    color: #b5838d;
+    font-weight: bold;
+}
+
+#cart-dropdown {
+    max-height: 400px;
+    overflow-y: auto;
+    font-size:medium;
+}
+#featured .perfume button.add-to-cart {
+    background-color: #800020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#featured .perfume button.add-to-cart:hover {
+    background: #d4a373;
+
+}
+#clear-cart {
+    background-color: #800020; 
+    color: white; 
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%; 
+}
+
+#clear-cart:hover {
+    background: #d4a373; 
+}
+#product-list .product button.add-to-cart {
+    background-color:#800020; 
+    color: white; 
+    border: 1px solid #ccc; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#product-list .product button.add-to-cart:hover {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #ccc; 
+}
+
+#about {
+    border: 3px solid #800020; 
+    border-radius: 15px; 
+    padding: 40px; 
+    margin: 40px auto; 
+    background-color: #fff; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    font-family: 'Georgia', serif; 
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: #333; 
+    text-align: justify; 
+}
+
+#about p {
+    margin-bottom: 20px; 
+}
+
+#about h1, #about h2 {
+    text-align: center;
+    color: #800020; 
+    margin-bottom: 20px; 
+    font-family: 'Georgia', serif;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background: white;
+    color:#800020;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#back-to-top:hover {
+    background: #d4a373;
+    transform: scale(1.1);
+}
+.confirmation-message {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#confirmation-message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+.notification.success {
+    background-color: #4CAF50;
+}
+
+.notification.error {
+    background-color: #f44336; 
+}
+@media (max-width: 460px) {
+body {
+    font-size: 14px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+    background-color: #800020;
+}
+
+nav ul li a {
+    font-size: 1rem;
+}
+
+.cart-icon {
+    font-size: 25px;
+    right: 10px;
+    top: 10px;
+}
+
+.cart-count {
+    font-size: 12px;
+    padding: 2px 4px;
+}
+
+#cart-dropdown {
+    width: 90%;
+    right: 5%;
+    top: 50px;
+}
+
+main {
+    padding: 10px;
+}
+
+#featured .perfume {
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+}
+
+#featured .perfume img {
+    width: 100%;
+    height: auto;
+}
+
+#product-list .product {
+    margin: 10px auto;
+    width: 90%;
+    padding: 10px;
+}
+
+#product-list .product img {
+    width: 100%;
+    height: auto;
+}
+
+#search-bar {
+    width: 90%;
+    margin: 10px auto;
+}
+
+form {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+footer {
+    font-size: 0.8rem;
+    padding: 10px 0;
+}
+
+#cart-items li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#cart-items li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#cart-items li .cart-item-details {
+    width: 100%;
+}
+
+#checkout-btn, #clear-cart {
+    width: 100%;
+}
+
+#cart-dropdown h2 {
+    font-size: 1.2rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 1rem;
+}
+}

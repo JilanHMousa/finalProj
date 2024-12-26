@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Store - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jilan Perfume</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                <i>We’d love to hear from you! At Jilan Perfume, your satisfaction is our top priority, and we’re here to assist you every step of the way. Whether you have questions about our products, need help finding your signature scent, or simply want to share your feedback, our team is ready to help. Let’s create a fragrant journey together—because every story deserves a perfect scent.</i>
+            </p>
+            <form id="contact-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+        
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+        
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="10-digit number">
+        
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120" required>
+        
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies" required placeholder="E.g., Reading, Traveling">
+        
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit" style="background-color: #800020;">Submit</button>
+            </form>
+            <div class="confirmation-message" id="confirmation-message" style="display: none;">
+                Thank you for reaching out to us! We will get back to you shortly.
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: #800020;">
+        <p>
+            Contact us: jilan@perfumes.com | Follow us :
+            <a href="https://www.instagram.com" target="_blank" style="color: white; text-decoration: none; font-size: 20px;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" style="color: white; text-decoration: none; margin-left: 10px;font-size: 20px;">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
